@@ -25,7 +25,7 @@ const products = [
   {
     title: "Dell XPS 13 Laptop",
     category: "Electronics",
-    images_url:["https://cdn.mos.cms.futurecdn.net/kMkWVRBsjVw3MnbxBUM9pj-1920-80.jpg.webpttps://www.techradar.com/computing/windows-laptops/dell-xps-13-intel-core-ultra-2nd-gen-2025-review"],
+    images_url:["https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSZ1duV8CJRaNrNq5i7AEZgjK2IJu-9zIlePTG4AGj3bX1eAG-y5a9t3kY2JFVwyQMbPf6rQCjFIi1uKAv5y-eDY72oAaVB3su1XE2qrHHE-WjXfdceREcLO_0pRX43-RpFge1WIE63wQ&usqp=CAc"],
     description: "Dell XPS 13, Intel i5/i7, 8GB RAM, 256GB SSD. 13.3' display, slim, lightweight, Windows 11. Light scratches, battery replaced if older.",
     price: 45000,
     quantity: 8,
