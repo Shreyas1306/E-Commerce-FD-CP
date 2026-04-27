@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <header className="navbar">
       <Link to="/" className="logo">
-        E-Commerce Store
+        <h1 className="logo-main">E-Commerce <span>Store</span></h1>
       </Link>
 
       <nav className="nav-right">
