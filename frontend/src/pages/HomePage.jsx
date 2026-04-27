@@ -29,7 +29,7 @@ function HomePage() {
   return (
     <main className="page-wrap">
       <img src={adBanner} alt="Advertisement banner" className="hero-banner" />
-      <h2 className="section-title">Amazing Products....</h2>
+      <h2 className="section-title">Top Deals <span>for You</span></h2>
       <section className="product-grid">
         {products.map((product, index) => (
           <ProductCard key={product._id || `${product.title}-${index}`} product={product} />

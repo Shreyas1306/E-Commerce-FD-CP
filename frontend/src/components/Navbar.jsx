@@ -21,18 +21,21 @@ function Navbar() {
       <nav className="nav-right">
         {isLoggedIn ? (
           <>
-            <span>Hello, {currentUser?.name || "User"}</span>
+            <div className="account-badge">
+              <span className="account-icon">👤</span>
+              <span>Hello, {currentUser?.name || "User"}</span>
+             </div> 
             <button className="cart-btn" type="button" onClick={handleLogout}>
               Logout
             </button>
           </>
         ) : (
           <Link to="/login">
-            <span className="cart-btn">Sign In</span>
+            <button className="cart-btn" type="button">Sign In</button>
           </Link>
         )}
         <Link to="/cart" className="cart-link">
-          <span className="cart-btn">Cart</span>
+          <button className="cart-btn" type="button">Cart</button>
           {totalItems > 0 && (
             <span key={totalItems} className="cart-badge">
               {totalItems}

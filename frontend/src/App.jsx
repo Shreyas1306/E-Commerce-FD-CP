@@ -6,6 +6,7 @@ import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
+import Footer from "./components/Footer";
 
 function ProtectedRoute() {
   const { isLoggedIn } = useAuth();
@@ -32,6 +33,7 @@ function App() {
         <Route path="/register" element={<SignupPage />} />
         <Route path="/signup" element={<SignupPage />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
