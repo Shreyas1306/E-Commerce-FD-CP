@@ -153,7 +153,7 @@ function CheckoutPage() {
               <input name="state" placeholder="State" value={address.state} onChange={onAddressChange} />
               <input name="pincode" placeholder="Pincode" value={address.pincode} onChange={onAddressChange} />
             </div>
-            <button type="button" className="amazon-btn" onClick={handleContinuePayment}>
+            <button type="button" className="cart-btn" onClick={handleContinuePayment}>
               Continue to Payment
             </button>
           </div>
@@ -227,7 +227,7 @@ function CheckoutPage() {
               </label>
             </div>
 
-            <button type="button" className="amazon-btn" onClick={handlePlaceOrder}>
+            <button type="button" className="cart-btn" onClick={handlePlaceOrder}>
               Place Order
             </button>
           </div>
@@ -251,7 +251,7 @@ function CheckoutPage() {
             {address.pincode}
           </p>
           <p>Total paid: Rs. {confirmedSummary.total.toFixed(2)}</p>
-          <button className="amazon-btn" type="button" onClick={() => navigate("/")}>
+          <button className="cart-btn" type="button" onClick={() => navigate("/")}>
             Continue Shopping
           </button>
         </section>

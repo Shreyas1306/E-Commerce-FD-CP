@@ -67,7 +67,7 @@ function CartPage() {
         <h3>Order Summary</h3>
         <p>Total items: {totalItems}</p>
         <p>Total price: Rs. {totalPrice.toFixed(2)}</p>
-        <button className="amazon-btn" type="button" onClick={() => navigate("/checkout")}>
+        <button className="cart-btn" type="button" onClick={() => navigate("/checkout")}>
           Proceed to Checkout
         </button>
       </aside>
