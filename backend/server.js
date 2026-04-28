@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 const Listing = require("./models/listings");
 const authRoutes = require("./routes/auth");
 const orderRoutes = require("./routes/orderRoutes");
-const initdata = require("../seed/data.js");
+// const initdata = require("../seed/data.js");
 
 dotenv.config();
 
@@ -30,12 +30,12 @@ mongoose
   })
   .catch((err) => console.log("DB Error:", err));
 
-app.get("/api/products", (req, res) => {
-  res.json(initdata.data);
-});
+// app.get("/api/products", (req, res) => {
+//   res.json(initdata.data);
+// });
 
 // Existing product route logic preserved
-app.get("/listings", async (req, res) => {
+app.get("/api/products", async (req, res) => {
   try {
     const listings = await Listing.find();
     res.json(listings);
