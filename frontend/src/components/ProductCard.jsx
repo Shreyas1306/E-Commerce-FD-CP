@@ -43,7 +43,7 @@ function ProductCard({ product }) {
         <p className="price">Rs. {product.price}</p>
       </div>
       <button
-        className={`amazon-btn add-to-cart-btn ${added ? "added" : ""}`}
+        className={` add-to-cart-btn ${added ? "added" : ""}`}
         type="button"
         onClick={handleAddToCart}
       >
